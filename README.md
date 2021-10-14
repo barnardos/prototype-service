@@ -5,8 +5,9 @@ Built with [Eleventy](https://www.11ty.dev/).
 ## Setup
 
 1. Move to the project directory e.g. `cd prototype-service`.
-2. Run `npx @11ty/eleventy --serve --port=8081`.
-3. Go to http://localhost:8081/london-supported-lodgings-service/
+2. Run `npm install`.
+3. Run `npx @11ty/eleventy --serve --port=8081`.
+4. Go to http://localhost:8081/london-supported-lodgings-service/
 
 ## Architecture
 

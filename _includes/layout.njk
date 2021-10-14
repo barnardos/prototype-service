@@ -1,0 +1,19 @@
+<!doctype html>
+<html class="no-js" lang="en-gb">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width;initial-scale=1">
+    <script>(function(H){H.className=H.className.replace(/\bno-js\b/,'js')})(document.documentElement)</script>
+    <title>{{ title }}</title>
+    {% set css %}
+      {% include './css/barnardos.css' %}
+    {% endset %}
+    <style>
+      {{ css | cssmin | safe }}
+    </style>
+  </head>
+  <body>
+    {{ content | safe }}
+    <script src="/js/scripts.js"></script>
+  </body>
+</html>

@@ -1,5 +1,5 @@
 <style>
-  .line {
+  .service-entity .line {
     border-bottom: 1px solid #ccc;
     margin: 2rem 0;
   }
@@ -8,6 +8,19 @@
     overflow-wrap: break-word;
     word-wrap: break-word;
     word-break: break-word;
+  }
+
+  .service-entity th {
+    font-weight: bold;
+    text-align: left;
+  }
+
+  .service-entity td:first-child {
+    padding-right: 1rem;
+  }
+
+  .service-entity b {
+    font-weight: bold;
   }
 </style>
 
@@ -30,8 +43,38 @@
           <dd class="service-entity__item">
             <a href="https://www.google.com/maps/search/?api=1&amp;query=51.4171178%2C-0.0844172" target="_blank">View on Google Maps</a>
           </dd>
-          <dt>Call:</dt><dd class="service-entity__item">020 8771 0907</dd>
-          <dt>Email:</dt><dd class="service-entity__item"><a href="mailto:LondonSupportedLodgings@barnardos.org.uk">Email this service</a></dd>
+          <dt>Opening hours:</dt><dd class="service-entity__item">
+            <table>
+              <thead>
+                <tr>
+                  <th colspan="2">Opening hours</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Monday</td>
+                  <td>10.30am - 2pm</td>
+                </tr>
+                <tr>
+                  <td>Tuesday</td>
+                  <td>10.30am - 2pm</td>
+                </tr>
+                <tr>
+                  <td>Wednesday</td>
+                  <td>10.30am - 2pm</td>
+                </tr>
+                <tr>
+                  <td>Thursday</td>
+                  <td>Closed</td>
+                </tr>
+                <tr>
+                  <td>Thursday</td>
+                  <td>Closed</td>
+                </tr>
+              </tbody>
+            </table>
+          </dd>
+          <dt>Accessibility:</dt><dd class="service-entity__item"><b>Accessibility</b><p>Premises are fully accessible to people with disabilites.</dd>
         </dl>
 
       </div>

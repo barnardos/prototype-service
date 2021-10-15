@@ -347,7 +347,7 @@
 
 
 <style>
-  .line {
+  .service-entity .line {
     border-bottom: 1px solid #ccc;
     margin: 2rem 0;
   }
@@ -356,6 +356,19 @@
     overflow-wrap: break-word;
     word-wrap: break-word;
     word-break: break-word;
+  }
+
+  .service-entity th {
+    font-weight: bold;
+    text-align: left;
+  }
+
+  .service-entity td:first-child {
+    padding-right: 1rem;
+  }
+
+  .service-entity b {
+    font-weight: bold;
   }
 </style>
 
@@ -378,8 +391,38 @@
           <dd class="service-entity__item">
             <a href="https://www.google.com/maps/search/?api=1&amp;query=51.4171178%2C-0.0844172" target="_blank">View on Google Maps</a>
           </dd>
-          <dt>Call:</dt><dd class="service-entity__item">020 8771 0907</dd>
-          <dt>Email:</dt><dd class="service-entity__item"><a href="mailto:LondonSupportedLodgings@barnardos.org.uk">Email this service</a></dd>
+          <dt>Opening hours:</dt><dd class="service-entity__item">
+            <table>
+              <thead>
+                <tr>
+                  <th colspan="2">Opening hours</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Monday</td>
+                  <td>10.30am - 2pm</td>
+                </tr>
+                <tr>
+                  <td>Tuesday</td>
+                  <td>10.30am - 2pm</td>
+                </tr>
+                <tr>
+                  <td>Wednesday</td>
+                  <td>10.30am - 2pm</td>
+                </tr>
+                <tr>
+                  <td>Thursday</td>
+                  <td>Closed</td>
+                </tr>
+                <tr>
+                  <td>Thursday</td>
+                  <td>Closed</td>
+                </tr>
+              </tbody>
+            </table>
+          </dd>
+          <dt>Accessibility:</dt><dd class="service-entity__item"><b>Accessibility</b><p>Premises are fully accessible to people with disabilites.</dd>
         </dl>
 
       </div>
@@ -387,6 +430,95 @@
   </aside>
 </div>
 
+
+
+<style>
+  .download-block {
+    margin-bottom: 2rem;
+  }
+</style>
+
+<div class="download-block">
+  <div class="download-block__contain">
+    <h3 class="sub-heading">Helpful documents</h3>
+    <div class="download-block__links">
+      <article>
+        <div><span class="file file--mime-application-vnd-openxmlformats-officedocument-wordprocessingml-document file--x-office-document"><a href="https://www.barnardos.org.uk/sites/default/files/2021-05/London%20Supported%20Lodging%20Application%20Form.docx" type="application/vnd.openxmlformats-officedocument.wordprocessingml.document; length=147008" title="London Supported Lodging Application Form.docx" target="_blank">London Supported Lodgings Application Form</a></span>
+        </div>
+      </article>
+
+      <article>
+        <div><span class="file file--mime-application-pdf file--application-pdf"><a href="https://www.barnardos.org.uk/sites/default/files/2021-05/London%20Supported%20Lodgings%20Leaflet%202020.pdf" type="application/pdf; length=5567334" title="London Supported Lodgings Leaflet 2020.pdf" target="_blank">London Supported Lodgings Leaflet</a></span>
+</div>
+      </article>
+      <article>
+        <div><span class="file file--mime-application-pdf file--application-pdf"><a href="https://www.barnardos.org.uk/sites/default/files/2021-08/2020%20Your%20Data%20Your%20Rights%20Leaflet%20-%20London%20Supported%20Lodgings%20Service.pdf" type="application/pdf; length=144237" title="2020 Your Data Your Rights Leaflet - London Supported Lodgings Service.pdf" target="_blank">2020 Your Data Your Rights Leaflet - London Supported Lodgings Service</a></span>
+        </div>
+      </article>
+      <article>
+        <div><span class="file file--mime-application-pdf file--application-pdf"><a href="https://www.barnardos.org.uk/sites/default/files/2021-10/London%20Supported%20Lodgings%20Application%20Guidance%20Notes_0.pdf" type="application/pdf; length=421536" title="London Supported Lodgings Application Guidance Notes_0.pdf" target="_blank">London Supported Lodgings Application Guidance Notes</a></span>
+        </div>
+      </article>
+    </div>
+  </div>
+</div>
+
+
+<style>
+  .help {
+    margin-bottom: 2rem;
+  }
+</style>
+
+<div class="text-block help">
+  <div class="text-block__lead">
+    <h2 class="heading">We can help with</h2>
+    <div>
+      <a href="#1">Leaving care</a>
+      <p class="rich-text">Supporting the transition to independent living, including advice, supported lodgings, help getting a job.</p>
+
+      <a href="#1">Housing and homelessness</a>
+      <p class="rich-text">Housing support to assist and sustain independent living. Raising awareness through educational visits and improving the understanding of risks.</p>
+    </div>
+  </div>
+</div>
+
+
+<style>
+  .grid {
+    margin: 0 1rem 2rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+    grid-gap: 1rem;
+  }
+
+  .grid img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 170 / 120;
+  }
+</style>
+
+<div class="grid">
+  <div>
+    <img src="https://placekitten.com/340/240" width="170" height="120">
+  </div>
+  <div>
+    <img src="https://placekitten.com/340/240" width="170" height="120">
+  </div>
+  <div>
+    <img src="https://placekitten.com/340/240" width="170" height="120">
+  </div>
+  <div>
+    <img src="https://placekitten.com/340/240" width="170" height="120">
+  </div>
+  <div>
+    <img src="https://placekitten.com/340/240" width="170" height="120">
+  </div>
+  <div>
+    <img src="https://placekitten.com/340/240" width="170" height="120">
+  </div>
+</div>
 
 
 <style>

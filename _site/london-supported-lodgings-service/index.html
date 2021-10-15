@@ -19,11 +19,15 @@
           grid-template-rows: masonry;
           grid-auto-flow: dense;
           grid-gap: 0 7rem;
+          margin: 0 auto;
+          max-width: 87.5rem;
         }
 
         .header,
         .breadcrumbs,
-        .hero {
+        .hero,
+        .events,
+        .location-search-box {
           grid-column: 1 / -1;
         }
 
@@ -31,7 +35,9 @@
         .prose,
         .help,
         .gallery,
-        .video {
+        .embedYouTube,
+        .team,
+        .quote {
           grid-column: 1 / 2;
         }
 
@@ -246,7 +252,7 @@
     margin: -3rem 1rem 0;
     position: relative;
     z-index: 1;
-    width: max-content;
+    /*width: max-content;*/
   }
 </style>
 
@@ -540,21 +546,21 @@
 
 
 <style>
-  .grid {
+  .gallery {
     margin: 0 1rem 2rem;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
     grid-gap: 1rem;
   }
 
-  .grid img {
+  .gallery img {
     width: 100%;
     height: auto;
     aspect-ratio: 170 / 120;
   }
 </style>
 
-<div class="grid">
+<div class="gallery">
   <div>
     <img src="https://placekitten.com/340/240" width="170" height="120">
   </div>
@@ -591,71 +597,89 @@
 
 
 <style>
-.heading {
-    font: 700 1.802rem/2.25rem proxima-nova,sans-serif;
-    padding: 2rem;
-}
+  .team {
+    margin: 0 1rem;
+  }
 
-.sub-heading {
-    font-size: 1.25rem;
-    font-weight: bold;
-    padding-left: 2rem;
-}
+  .person {
+    margin-bottom: 2rem;
+  }
 
-.text {
-    padding-left: 2rem;
-    padding-bottom: 1rem;
-}
+  .sub-heading {
+      font-size: 1.25rem;
+      font-weight: bold;
+  }
 
-.picture {
-    padding-left: 2rem;
-}
-
-.circle {
-    border-radius: 50%;
-    width: 100px;
-    height: 100px;  
-}
-
+  .circle {
+      border-radius: 50%;
+      width: 100px;
+      height: 100px;  
+  }
 </style>
 
-<div class="heading">Meet the team</div>
+<div class="team">
+  <div class="heading">Meet the team</div>
+  <div class="person">
     <div class="picture"><img src="/img/team.jpeg" class="circle" alt="Avatar"></div>
     <div>
-        <p class="sub-heading">Name of worker - Job title</p>
-        <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      <p class="sub-heading">Name of worker - Job title</p>
+      <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
     </div>
+  </div>
 
-
-     <div class="picture"><img src="/img/catmeet.jpeg" class="circle" alt="Avatar"></div>
+  <div class="person">
+    <div class="picture"><img src="/img/catmeet.jpeg" class="circle" alt="Avatar"></div>
     <div>
-        <p class="sub-heading">Name of worker - Job title</p>
-        <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      <p class="sub-heading">Name of worker - Job title</p>
+      <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
     </div>
-
-
-<div class="text-block">
-    <div class="text-block__inner">      
-        <div class="rich-text">
-            <h2>Case Studies</h2>
-            <blockquote>
-                <p><span><span><span><span><span><span>When Jenny from Barnardo’s came along she was an absolute lifesaver. She helped with food vouchers and would go to the foodbank and collect food for us. </span></span></span></span></span></span></p>
-                </br>
-                </br>
-                <p>Read Amanada's Story ></p>
-            </blockquote>
-        </div>
-    </div>
+  </div>
 </div>
 
 
 <style>
+  .quote {
+    margin: 0 1rem 2rem;
+    padding: 0;
+  }
+
+  .rich-text blockquote p {
+    display: block;
+  }
+</style>
+
+<div class="quote ">
+  <div class="text-block__inner">      
+    <div class="rich-text">
+      <h2>Case Studies</h2>
+      <blockquote>
+        <p>When Jenny from Barnardo’s came along she was an absolute lifesaver. She helped with food vouchers and would go to the foodbank and collect food for us.</p>
+        <p>Read Amanada's Story</p>
+      </blockquote>
+    </div>
+  </div>
+</div>
+
+
+<style>
+  .teaser-list {
+    width: 100%;
+    margin: 0 1rem 2rem;
+    padding: 0;
+  }
+
+
+
+  .teaser__inner {
+    box-sizing: border-box;
+  }
+
 .teaser-list__page-info {
         font: 700 1.802rem/2.25rem proxima-nova,sans-serif;
 }
 </style>
 
-<div class="teaser-list ">
+<div class="teaser-list events">
     <div class="teaser-list__page-info">Events</div>
         <ul class="teaser-list__teasers">
             <li class="teaser-list__item"><article class="teaser teaser__event">
@@ -714,7 +738,6 @@
             </article></li>
         </ul>
     </div>
-</div>    
 
 
 <style>

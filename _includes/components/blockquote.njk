@@ -1,11 +1,21 @@
 <style>
   .quote {
-    margin: 0 1rem 2rem;
+    margin: 0 1rem 3rem;
     padding: 0;
   }
 
   .rich-text blockquote p {
     display: block;
+  }
+
+  .quote blockquote::after {
+    display: none;
+  }
+
+  .quote a {
+    display: inline-block;
+    margin-top: 2rem;
+    font-size: 1rem;
   }
 </style>
 
@@ -14,8 +24,8 @@
     <div class="rich-text">
       <h2>Case Studies</h2>
       <blockquote>
-        <p>When Jenny from Barnardo’s came along she was an absolute lifesaver. She helped with food vouchers and would go to the foodbank and collect food for us.</p>
-        <p>Read Amanada's Story</p>
+        <p>When Jenny from Barnardo’s came along she was an absolute lifesaver. She helped with food vouchers and would go to the foodbank and collect food for us.”</p>
+        <a href="#1">Read Amanada's Story</a>
       </blockquote>
     </div>
   </div>

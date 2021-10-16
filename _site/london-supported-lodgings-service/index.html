@@ -11,44 +11,45 @@
     </style>
   </head>
   <body>
-    <style>
-      @media screen and (min-width:56.667rem) {
-        .prototype-layout {
-          display: grid;
-          grid-template-columns: 2fr 1fr;
-          grid-template-rows: masonry;
-          grid-auto-flow: dense;
-          grid-gap: 0 7rem;
-          margin: 0 auto;
-          max-width: 87.5rem;
-        }
+    
+<style>
+  @media screen and (min-width:56.667rem) {
+    .prototype-layout {
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      grid-template-rows: masonry;
+      grid-auto-flow: dense;
+      grid-gap: 0 7rem;
+      margin: 0 auto;
+      max-width: 87.5rem;
+    }
 
-        .header,
-        .breadcrumbs,
-        .hero,
-        .events,
-        .location-search-box {
-          grid-column: 1 / -1;
-        }
+    .header,
+    .breadcrumbs,
+    .hero,
+    .events,
+    .location-search-box,
+    .service-entityTeasers {
+      grid-column: 1 / -1;
+    }
 
-        .tags,
-        .prose,
-        .help,
-        .gallery,
-        .embedYouTube,
-        .team,
-        .quote {
-          grid-column: 1 / 2;
-        }
+    .tags,
+    .prose,
+    .help,
+    .gallery,
+    .embedYouTube,
+    .team,
+    .quote {
+      grid-column: 1 / 2;
+    }
 
-        .service-logos,
-        .contact-downloads {
-          grid-column: 2 / 3;
-        }
-      }
-    </style>
-    <div class="prototype-layout">
-      
+    .service-logos,
+    .contact-downloads {
+      grid-column: 2 / 3;
+    }
+  }
+</style>
+<div class="prototype-layout">
 <div class="header">
   <a href="#main-content" class="skip-link focusable">Skip to main content</a>
   <a href="#footer" class="skip-link focusable">Skip to footer</a>
@@ -231,7 +232,7 @@
 
 <style>
   .hero {
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
   }
 
   .hero div {
@@ -252,7 +253,20 @@
     margin: -3rem 1rem 0;
     position: relative;
     z-index: 1;
-    /*width: max-content;*/
+  }
+
+  @media screen and (min-width:56.667rem) {
+    .hero div {
+      height: 500px;
+    }
+
+    .hero img {
+      transform: translateY(-25rem);
+    }
+
+    .hero h1 {
+      width: max-content;
+    }
   }
 </style>
 
@@ -285,8 +299,8 @@
 <style>
   .tags {
     border-bottom: 1px solid #ccc;
-    padding-bottom: 2rem;
-    margin: 0 1rem 2rem;
+    padding-bottom: 3rem;
+    margin: 0 1rem 3rem;
   }
 
   .tag-grey,
@@ -526,8 +540,18 @@
 
 <style>
   .help {
-    margin: 0 0 2rem;
+    margin: 0 0 3rem !important;
     padding: 0 1rem;
+  }
+
+  .help .text-block__lead {
+    margin-top: 0;
+  }
+
+  @media screen and (min-width:56.667rem) {
+    .help {
+      margin-top: -2rem !important;
+    }
   }
 </style>
 
@@ -547,7 +571,7 @@
 
 <style>
   .gallery {
-    margin: 0 1rem 2rem;
+    margin: 0 1rem 3rem;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
     grid-gap: 1rem;
@@ -584,7 +608,7 @@
 
 <style>
   .embedYouTube {
-    margin: 0 1rem 2rem !important;
+    margin: 0 1rem 3rem !important;
     padding: 0;
   }
 </style>
@@ -598,7 +622,7 @@
 
 <style>
   .team {
-    margin: 0 1rem;
+    margin: 0 1rem 1rem;
   }
 
   .person {
@@ -639,12 +663,22 @@
 
 <style>
   .quote {
-    margin: 0 1rem 2rem;
+    margin: 0 1rem 3rem;
     padding: 0;
   }
 
   .rich-text blockquote p {
     display: block;
+  }
+
+  .quote blockquote::after {
+    display: none;
+  }
+
+  .quote a {
+    display: inline-block;
+    margin-top: 2rem;
+    font-size: 1rem;
   }
 </style>
 
@@ -653,8 +687,8 @@
     <div class="rich-text">
       <h2>Case Studies</h2>
       <blockquote>
-        <p>When Jenny from Barnardo’s came along she was an absolute lifesaver. She helped with food vouchers and would go to the foodbank and collect food for us.</p>
-        <p>Read Amanada's Story</p>
+        <p>When Jenny from Barnardo’s came along she was an absolute lifesaver. She helped with food vouchers and would go to the foodbank and collect food for us.”</p>
+        <a href="#1">Read Amanada's Story</a>
       </blockquote>
     </div>
   </div>
@@ -664,11 +698,15 @@
 <style>
   .teaser-list {
     width: 100%;
-    margin: 0 1rem 2rem;
+    margin: 0 1rem 3rem;
     padding: 0;
   }
 
-
+  @media screen and (min-width:56.667rem) {
+    .teaser-list {
+      width: auto;
+    }
+  }
 
   .teaser__inner {
     box-sizing: border-box;
@@ -814,6 +852,7 @@
   </ul>
 </aside>
 
+</div>
 
 <footer id="footer">
     <div class="footer footer--no-reg">
@@ -841,7 +880,6 @@
 </footer>
 
 
-    </div>
     <script src="/js/scripts.js"></script>
   </body>
 </html>

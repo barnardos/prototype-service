@@ -1,6 +1,6 @@
 <style>
   .hero {
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
   }
 
   .hero div {
@@ -21,7 +21,20 @@
     margin: -3rem 1rem 0;
     position: relative;
     z-index: 1;
-    /*width: max-content;*/
+  }
+
+  @media screen and (min-width:56.667rem) {
+    .hero div {
+      height: 500px;
+    }
+
+    .hero img {
+      transform: translateY(-25rem);
+    }
+
+    .hero h1 {
+      width: max-content;
+    }
   }
 </style>
 

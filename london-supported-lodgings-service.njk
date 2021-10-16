@@ -3,6 +3,44 @@ layout: layout
 title: London Supported Lodgings Service
 ---
 
+<style>
+  @media screen and (min-width:56.667rem) {
+    .prototype-layout {
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      grid-template-rows: masonry;
+      grid-auto-flow: dense;
+      grid-gap: 0 7rem;
+      margin: 0 auto;
+      max-width: 87.5rem;
+    }
+
+    .header,
+    .breadcrumbs,
+    .hero,
+    .events,
+    .location-search-box,
+    .service-entityTeasers {
+      grid-column: 1 / -1;
+    }
+
+    .tags,
+    .prose,
+    .help,
+    .gallery,
+    .embedYouTube,
+    .team,
+    .quote {
+      grid-column: 1 / 2;
+    }
+
+    .service-logos,
+    .contact-downloads {
+      grid-column: 2 / 3;
+    }
+  }
+</style>
+<div class="prototype-layout">
 {% include './_includes/components/header.njk' %}
 
 {% include './_includes/components/breadcrumb.njk' %}
@@ -36,5 +74,6 @@ title: London Supported Lodgings Service
 {% include './_includes/components/location.njk' %}
 
 {% include './_includes/components/serviceentity.njk' %}
+</div>
 
 {% include './_includes/components/footer.njk' %}

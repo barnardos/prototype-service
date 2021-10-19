@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="23px" height="23px" viewBox="0 0 23 23" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 63.1 (92452) - https://sketch.com -->
+    <title>Group 5</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Services" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Individual-service-page" transform="translate(-1246.000000, -1548.000000)">
+            <g id="Group-5" transform="translate(1246.000000, 1548.000000)">
+                <circle id="Oval" stroke="#558200" fill="#558200" cx="11.5" cy="11.5" r="11"></circle>
+                <line x1="11.5" y1="4.5" x2="11.5" y2="11.5" id="Line-4" stroke="#FFFFFF" stroke-width="2" stroke-linecap="square"></line>
+                <line x1="12.5" y1="11.5" x2="17.5" y2="11.5" id="Line-6" stroke="#FFFFFF" stroke-width="2" stroke-linecap="square"></line>
+            </g>
+        </g>
+    </g>
+</svg>

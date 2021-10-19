@@ -257,7 +257,7 @@
 
   @media screen and (min-width:56.667rem) {
     .hero div {
-      height: 500px;
+      height: 450px;
     }
 
     .hero h1 {
@@ -288,7 +288,7 @@
 </style>
 
 <div class="service-logos">
-  <img src="/img/Triangles logo.png">
+  <img src="/img/lifeskills-logo.png">
 </div>
 
 
@@ -304,7 +304,7 @@
     display: inline-block;
     background-color: #d6d6d6;
     padding: 0.5rem 1rem;
-    margin: 0.5rem 0.5rem 0.5rem 0;
+    margin: 1rem 0.5rem 1rem 0;
   }
 
   .tag-orange {
@@ -319,7 +319,7 @@
 <div class="tags">
   <p><b>Type of service:</b></p>
   <span class="tag-grey">Leaving care</span> <span class="tag-grey">Housing and homelessness</span>
-
+<br><br>
   <p><b>We accept referrals from:</b></p>
   <span class="tag-orange">Young people</span> <span class="tag-orange">Parents/carers</span>
 </div>
@@ -397,10 +397,10 @@
   <p>If you are a parent/carer, you can refer a young person to this service using the links below.</p>
 
   <p><strong>Online</strong><br>
-    <a href="#1">Fill in the online application form</a></p>
+    <a href="#1">Fill in the online application form <img src="/img/arrow.svg"></a></p>
 
   <p><strong>Offline</strong><br>
-    <a href="#1">Download and print the application form</a></p>
+    <a href="#1">Download and print the application form <img src="/img/arrow.svg"></a></p>
 
   <p>If you are not in the list above you can<br>
     <a href="#1">Search for more services here</a></p>
@@ -432,6 +432,7 @@
 
   .service-entity th {
     font-weight: bold;
+    padding-bottom: 0.5rem;
     text-align: left;
   }
 
@@ -451,19 +452,19 @@
         <h2 class="service-entity__heading">Contact details</h2>
 
         <dl class="service-entity__list">
-          <dt><img src="/img/greenphone.png" width="18" height="18"></dt><dd class="service-entity__item">020 8771 0907</dd>
-          <dt><img src="/img/greenemail.png" width="18" height="18"></dt><dd class="service-entity__item"><a href="mailto:LondonSupportedLodgings@barnardos.org.uk">LondonSupportedLodgings@barnardos.org.uk</a></dd>
-          <dt><img src="/img/greencomputer.png" width="18" height="18"></dt><dd class="service-entity__item"><a href="#1">Visit the website for this service</a></dd>
+          <dt><img src="/img/phone.svg"></dt><dd class="service-entity__item">020 8771 0907</dd>
+          <dt><img src="/img/email.svg"></dt><dd class="service-entity__item"><a href="mailto:LondonSupportedLodgings@barnardos.org.uk">LondonSupportedLodgings@barnardos.org.uk</a></dd>
+          <dt><img src="/img/website.svg"></dt><dd class="service-entity__item"><a href="#1">Visit the website for this service</a></dd>
         </dl>
 
         <div class="line"></div>
 
         <dl class="service-entity__list">
-          <dt><span class="teaser__icon teaser__event_icon--region"></dt><dd class="service-entity__item">Barnardo's, The Triangle<br>2 Coxwell Road<br>Upper Norwood<br>London<br>SE19 3BG</dd>
+          <dt><img src="/img/map.svg"</dt><dd class="service-entity__item">Barnardo's, The Triangle<br>2 Coxwell Road<br>Upper Norwood<br>London<br>SE19 3BG</dd>
           <dd class="service-entity__item">
             <a href="https://www.google.com/maps/search/?api=1&amp;query=51.4171178%2C-0.0844172" target="_blank">View on Google Maps</a>
           </dd>
-          <dt><span class="teaser__icon teaser__event_icon--time"></dt><dd class="service-entity__item">
+          <dt><img src="/img/Opening-hours.svg"</dt><dd class="service-entity__item">
             <table>
               <thead>
                 <tr>
@@ -488,13 +489,13 @@
                   <td>Closed</td>
                 </tr>
                 <tr>
-                  <td>Thursday</td>
+                  <td>Friday</td>
                   <td>Closed</td>
                 </tr>
               </tbody>
             </table>
           </dd>
-          <dt><img src="/img/greentick.png" width="18" height="18"></dt><dd class="service-entity__item"><b>Accessibility</b><p>Premises are fully accessible to people with disabilites.</dd>
+          <dt><img src="/img/tick.svg"></dt><dd class="service-entity__item"><b>Accessibility</b><p>Premises are fully accessible to people with disabilites.</dd>
         </dl>
 
       </div>
@@ -548,6 +549,15 @@
     margin-top: 0;
   }
 
+.bulletsneeded {
+  list-style-type: disc;
+  padding-left: 1rem;
+}
+
+.heading {
+  padding-bottom: 1rem;
+}
+
   @media screen and (min-width:56.667rem) {
     .help {
       margin-top: -2rem !important;
@@ -559,11 +569,16 @@
   <div class="text-block__lead">
     <h2 class="heading">We can help with</h2>
     <div>
-      <a href="#1">Leaving care</a>
-      <p class="rich-text">Supporting the transition to independent living, including advice, supported lodgings, help getting a job.</p>
-
-      <a href="#1">Housing and homelessness</a>
-      <p class="rich-text">Housing support to assist and sustain independent living. Raising awareness through educational visits and improving the understanding of risks.</p>
+      <ul class="bulletsneeded">
+        <li>
+          <a href="#1">Leaving care <img src="/img/arrow.svg"></a>
+        </li>  
+          <p class="rich-text">Supporting the transition to independent living, including advice, supported lodgings, help getting a job.</p>
+        <li>
+          <a href="#1">Housing and homelessness <img src="/img/arrow.svg"></a>
+         <p class="rich-text">Housing support to assist and sustain independent living. Raising awareness through educational visits and improving the understanding of risks.</p>
+        </li>
+      </ul>
     </div>
   </div>
 </div>
@@ -639,6 +654,15 @@
       width: 100px;
       height: 100px;  
   }
+
+  .picture {
+      float: left;
+  }
+
+  .text {
+      padding-left: 6.5rem;
+  }
+
 </style>
 
 <div class="team">
@@ -688,7 +712,7 @@
       <h2>Case Studies</h2>
       <blockquote>
         <p>When Jenny from Barnardo’s came along she was an absolute lifesaver. She helped with food vouchers and would go to the foodbank and collect food for us.”</p>
-        <a href="#1">Read Amanada's Story</a>
+        <a href="#1">Read Amanada's Story <img src="/img/arrow.svg"></a>
       </blockquote>
     </div>
   </div>

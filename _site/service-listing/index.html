@@ -213,6 +213,7 @@ p.serviceText {
 @media screen and (min-width: 1024px) and (max-width: 1439px) {
     .callout-block__card-button a {
         display: block; 
+        max-width: 32rem;
     }
 }
 
@@ -319,10 +320,19 @@ p.serviceText {
     padding-bottom: 1rem;
 }
 
-.padding-box {
-    margin: 1rem;
-    border: 1px solid #ccc;
-    padding: 1rem;
+
+@media screen and (min-width:44rem) {
+    .padding-box {
+        margin: 1rem;
+        border: 1px solid #ccc;
+        padding: 1rem;
+    }
+
+    .padding-box {
+        margin: 2rem;
+        border: 1px solid #ccc;
+        padding: 1rem;
+    }
 }
 
 </style>
@@ -391,7 +401,7 @@ p.serviceText {
 </div>
 
 <div class="js-filters filter-form__container "><details class="filter-form__filter-list">
-    <summary class="filter-form__heading__inner">Hide advanced search options</summary>                       
+    <summary class="filter-form__heading__inner">Show advanced search options</summary>                       
     <div class="Switches-items">
         <div class="Switches-item">
             <div class="Switch Switch--checkbox">
@@ -500,7 +510,7 @@ p.serviceText {
         border-radius: 0.25rem 0 0.25rem 0;
         box-shadow: inset #cdcdcd -1px -1px 0 0;
         color: #1d1d1d;
-        margin-left: 120px;
+        margin-left: 110px;
         padding: 0.3rem 0.55rem 0.35rem 0.5rem;
         position: absolute;
         top: 0;

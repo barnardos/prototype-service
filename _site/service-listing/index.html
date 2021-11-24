@@ -195,9 +195,19 @@
 
 
     <style>
+.breadcrumbs {
+    margin: 0 auto;
+}
+
 .hero-text__title {
     box-shadow: none;
     padding: none;
+}
+
+@media screen and (min-width: 48rem) {
+    .hero-text__row {
+        padding: 0; 
+    }
 }
 
 p.serviceText {
@@ -210,7 +220,7 @@ p.serviceText {
     padding: 0 1rem;
 }
 
-@media screen and (min-width: 1024px) and (max-width: 1439px) {
+@media screen and (min-width: 1024px) {
     .callout-block__card-button a {
         display: block; 
         max-width: 32rem;
@@ -322,18 +332,23 @@ p.serviceText {
 }
 
 
-@media screen and (min-width:44rem) {
-    .padding-box {
+  .padding-box {
         margin: 1rem;
         border: 1px solid #ccc;
         padding: 1rem;
     }
 
+@media screen and (min-width:44rem) {
     .padding-box {
-        margin: 2rem;
         border: 1px solid #ccc;
         padding: 1rem;
+        margin: 2rem auto;
+        max-width: 87.5rem;
     }
+}
+
+.location-search-box {
+    margin: 0 auto 2rem;
 }
 
 </style>
@@ -403,7 +418,7 @@ p.serviceText {
 
 <div class="js-filters filter-form__container "><details class="filter-form__filter-list">
     <summary class="filter-form__heading__inner">Show advanced search options</summary>                       
-    <div class="Switches-items">
+    <div>
         <div class="Switches-item">
             <div class="Switch Switch--checkbox">
                 <input class="Switch-input" id="check-boxes-example-no-record" name="check-boxes-example" type="checkbox">
@@ -493,6 +508,11 @@ p.serviceText {
 </div>
 </div>
 
+<!-- <script>const summary = document.querySelector('summary');
+console.log(summary);
+summary.addEventListener('click', () => {
+  summary.textContent = summary.textContent.indexOf('Show') !== -1 ? 'Show advanced search options' : 'Hide advanced search options';
+});</script> -->
 
     <style>
     .teaser__container {
@@ -667,7 +687,7 @@ p.serviceText {
 
     <style>
   .location-search-box {
-    margin: 0 1rem 2rem;
+    margin: 0 auto 2rem;
     padding: 0
   }
 

@@ -538,32 +538,34 @@ p.serviceText img {
         padding: 0.5rem 1rem;
     }
 
-     @media screen and (min-width:44rem) {
-        .location__icon {
-            padding-top: 1rem;
-        }
+   @media screen and (min-width:44rem) {
+      .location__icon {
+          padding-top: 1rem;
+      }
+    }
+
+    .teaser__type {
+      background-color: #cfd0d1;
+      display: inline-block;
+      padding: 0.5rem 1rem;
+      position: static;
+    }
 
     .teaser__type--orange {
         background-color: #e5af7a;
         border-radius: 0 0 0.25rem 0.25rem;
         box-shadow: inset #cdcdcd -1px -1px 0 0;
         color: #1d1d1d;
-        margin-left: 150px;
+        margin-left: 10px;
         padding: 0.5rem 1rem;
-        position: absolute;
-        top: 0;
     }
 
-    @media screen and (min-width:44rem) {
-        .teaser__type--orange  {
-            margin-left: 130px;
-        }
+    .teaser__title {
+      margin: 1.25rem 0 1rem;
     }
-    
 
-    .teaser__type {
-        background-color: #cfd0d1;
-        padding: 0.5rem 1rem;
+    .teaser__inner {
+      padding: 0 1rem 1rem;
     }
 
     .teaser__image--wide {
@@ -576,15 +578,21 @@ p.serviceText img {
     }
  
     p.location__icon {
-        padding-top: 2.5rem;
+        padding: 1.5rem 0 0.5rem;
     }
 
-    @media screen and (min-width:44rem) {
-        .location__icon {
+    p.location__icon img {
+      position: relative;
+      top: 4px;
+      margin-right: 4px;
+    }
+
+    @media screen and (min-width:768px) {
+        p.location__icon {
             padding-top: 1rem;
         }
 
-      .location__icon {
+      p.location__icon {
           padding-left: 1rem;
           padding: 1rem;
           bottom: 0;
@@ -598,10 +606,28 @@ p.serviceText img {
         white-space: normal;
     }
 
-    @media screen and (min-width: 1024px) {
+    @media screen and (min-width: 768px) {
         .teaser__col--wide {
-            width: 85%;
+            width: auto;
         }
+
+        .teaser__inner {
+          padding-bottom: 4rem;
+        }
+    }
+
+    @media screen and (min-width: 1370px) {
+      .teaser__col--wide {
+        width: 65%;
+      }
+
+      .teaser__inner {
+        position: static;
+      }
+
+      .teaser__row { 
+        position: relative;
+      }
     }
 
     .teaser-list {

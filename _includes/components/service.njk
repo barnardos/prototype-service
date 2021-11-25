@@ -24,6 +24,15 @@
     .teaser__type {
         background-color: #cfd0d1;
     }
+
+    .teaser__image--wide {
+      flex-basis: 24%;
+    }
+
+    .teaser__image img {
+      aspect-ratio: 13/10;
+      object-fit:cover;
+    }
  
     p.location__icon {
         padding-top: 2.5rem;
@@ -34,12 +43,13 @@
             padding-top: 1rem;
         }
 
-    .location__icon {
-        padding-left: 1rem;
-        padding: 1rem;
-        bottom: 0;
-        right: 0;
-        position: absolute;
+      .location__icon {
+          padding-left: 1rem;
+          padding: 1rem;
+          bottom: 0;
+          right: 0;
+          position: absolute;
+      }
     }
 
     .teaser-list {
@@ -52,6 +62,12 @@
 
     .teaser-list__page-info {
         font: 600 1.424rem/2rem system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,sans-serif;
+    }
+
+    @media screen and (min-width:100rem) {
+      .teaser-list {
+        padding: 0;
+      }
     }
 
 </style>

@@ -332,7 +332,7 @@ p.serviceText img {
     cursor: pointer;
     list-style-type: none;
     text-decoration: underline;
-    padding-left: 1rem;
+    padding-left: 0;
     padding-bottom: 1rem;
 }
 
@@ -340,13 +340,12 @@ p.serviceText img {
   .padding-box {
         margin: 0 1rem;
         border: 1px solid #ccc;
-        padding: 1rem;
+        padding: 1rem 2.5rem 2.5rem;
     }
 
 @media screen and (min-width:44rem) {
     .padding-box {
         border: 1px solid #ccc;
-        padding: 1rem;
         margin: 0 auto;
         max-width: 87.5rem;
     }
@@ -354,6 +353,14 @@ p.serviceText img {
 
 .location-search-box {
     margin: 0 auto 2rem;
+}
+
+.location-search-box--2 {
+  margin-bottom: 1rem !important;
+}
+
+.search-box__inner--2 {
+  margin-bottom: 1rem !important;
 }
 
 </style>
@@ -395,12 +402,12 @@ p.serviceText img {
     </div>
 </div>
 
-<div class="location-search-box" data-gkey="AIzaSyCEPy13jGtUu0orSWQ_dBqvjwqqtGfx0mA">
+<div class="location-search-box location-search-box--2" data-gkey="AIzaSyCEPy13jGtUu0orSWQ_dBqvjwqqtGfx0mA">
   <div class="location-search-box--wrap">
         <input type="hidden" name="lat" value="51.9878093">
         <input type="hidden" name="lng" value="-0.211801">
         <div class="search-box">
-            <div class="search-box__inner">
+            <div class="search-box__inner search-box__inner--2">
                 <div class="search-box__wrap">
                     <div class="search-form">
                         <p class="serviceText"> What type of service are you looking for?
@@ -513,11 +520,13 @@ p.serviceText img {
 </div>
 </div>
 
-<!-- <script>const summary = document.querySelector('summary');
-console.log(summary);
-summary.addEventListener('click', () => {
-  summary.textContent = summary.textContent.indexOf('Show') !== -1 ? 'Show advanced search options' : 'Hide advanced search options';
-});</script> -->
+<script>
+  const summary = document.querySelector('summary');
+  summary.addEventListener('click', () => {
+    summary.textContent = summary.textContent !== 'Show advanced search options' ? 'Show advanced search options' : 'Hide advanced search options';
+  });
+</script>
+
 
     <style>
     .teaser__container {
@@ -545,6 +554,15 @@ summary.addEventListener('click', () => {
     .teaser__type {
         background-color: #cfd0d1;
     }
+
+    .teaser__image--wide {
+      flex-basis: 24%;
+    }
+
+    .teaser__image img {
+      aspect-ratio: 13/10;
+      object-fit:cover;
+    }
  
     p.location__icon {
         padding-top: 2.5rem;
@@ -555,12 +573,13 @@ summary.addEventListener('click', () => {
             padding-top: 1rem;
         }
 
-    .location__icon {
-        padding-left: 1rem;
-        padding: 1rem;
-        bottom: 0;
-        right: 0;
-        position: absolute;
+      .location__icon {
+          padding-left: 1rem;
+          padding: 1rem;
+          bottom: 0;
+          right: 0;
+          position: absolute;
+      }
     }
 
     .teaser-list {
@@ -573,6 +592,12 @@ summary.addEventListener('click', () => {
 
     .teaser-list__page-info {
         font: 600 1.424rem/2rem system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,sans-serif;
+    }
+
+    @media screen and (min-width:100rem) {
+      .teaser-list {
+        padding: 0;
+      }
     }
 
 </style>
@@ -699,6 +724,7 @@ summary.addEventListener('click', () => {
         </ul>
     </div>
   </div>
+
 
     <style>
   .location-search-box {

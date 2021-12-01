@@ -1,0 +1,84 @@
+---
+layout: layout
+title: Harrow Horizons
+---
+
+<style>
+  @media screen and (min-width:64rem) {
+    .prototype-layout {
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      grid-template-rows: masonry;
+      grid-auto-flow: dense;
+      grid-gap: 0 7vw;
+      margin: 0 auto;
+      max-width: 87.5rem;
+    }
+
+    .header,
+    .breadcrumbs,
+    .hero,
+    .events,
+    .location-search-box,
+    .service-entityTeasers {
+      grid-column: 1 / -1;
+    }
+
+    .tags,
+    .prose,
+    .help,
+    .gallery,
+    .embedYouTube,
+    .team,
+    .quote {
+      grid-column: 1 / 2;
+    }
+
+    .service-logos,
+    .contact-downloads {
+      grid-column: 2 / 3;
+    }
+  }
+</style>
+<div class="prototype-layout">
+{% include './_includes/components/header.njk' %}
+
+{% include './_includes/components/breadcrumb.njk' %}
+
+{% include './_includes/components/hero-horizons.njk' %}
+
+{% include './_includes/components/service-logos.njk' %}
+
+{% include './_includes/components/tags-horizons.njk' %}
+
+{% include './_includes/components/prose-horizons.njk' %}
+
+<div class="contact-downloads">
+  {% include './_includes/components/contact-horizons.njk' %}
+
+  {% include './_includes/components/downloads-horizons.njk' %}
+</div>
+
+{% include './_includes/components/help-horizons.njk' %}
+
+{% include './_includes/components/gallery.njk' %}
+
+{% include './_includes/components/video.njk' %}
+<style>
+  .location-search-box {
+    width: 100%;
+    padding: 1rem !important;
+  }
+</style>
+{% include './_includes/components/meettheteam.njk' %}
+
+{% include './_includes/components/blockquote.njk' %}
+
+{% include './_includes/components/event.njk' %}
+
+{% include './_includes/components/location.njk' %}
+
+{% include './_includes/components/serviceentity.njk' %}
+</div>
+
+{% include './_includes/components/footer.njk' %}

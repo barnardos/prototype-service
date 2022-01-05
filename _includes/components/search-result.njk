@@ -1,0 +1,131 @@
+<style>
+.breadcrumbs {
+    margin: 0 auto;
+}
+
+.hero-text__title {
+    box-shadow: none;
+    padding: none;
+}
+
+@media screen and (min-width: 48rem) {
+    .hero-text__row {
+        padding: 0; 
+    }
+}
+
+p.serviceText {
+    font: 600 1.424rem/2rem system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,sans-serif;
+    padding-bottom: 1rem;
+    display: block;
+}
+
+span.serviceText__icon {
+    font-weight: bold;
+    padding: 0 0 0 1rem;
+}
+
+.filter-form__heading--green {
+    color: #558200;
+    cursor: pointer;
+    font: 300 1.266rem/2rem proxima-nova,sans-serif;
+    list-style-type: none;
+    text-decoration: underline;
+    padding-left: 0;
+    padding-bottom: 2rem;
+}
+
+.filter-form__heading--red {
+    color: red;
+    cursor: pointer;
+    font: 300 1.266rem/2rem proxima-nova,sans-serif;
+    list-style-type: none;
+    text-decoration: underline;
+    padding-left: 0;
+    padding-bottom: 2rem;
+}
+
+  .padding-box {
+        margin: 0 1rem;
+        border: 1px solid #ccc;
+        padding: 1rem 2.5rem 2.5rem;
+    }
+
+@media screen and (min-width:44rem) {
+    .padding-box {
+        border: 1px solid #ccc;
+        margin: 0 auto;
+        max-width: 87.5rem;
+    }
+}
+
+.location-search-box {
+    margin: 0 auto 2rem;
+}
+
+.teaser__type__round {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.teaser__type__round--green {
+    background-color: #44c230;
+    border-radius: 25px;
+    display: inline-block;
+    padding: 0.5rem 1rem;
+}
+
+.teaser__type__round--orange {
+    background-color: #e5af7a;
+    border-radius: 25px;
+    display: inline-block;
+    margin-left: 10px;
+    padding: 0.5rem 1rem;
+}
+
+@media screen and (max-width:44rem) {
+    .teaser__type__round--orange {
+        border: 1px solid #ccc;
+        margin: 1rem 0;
+        max-width: 87.5rem;
+    }
+}
+
+.teaser__type__round--grey {
+    background-color: #cfd0d1;
+    border-radius: 25px;
+    color: #1d1d1d;
+    display: inline-block;
+    margin-left: 10px;
+    padding: 0.5rem 1rem;
+}
+
+</style>
+
+<div class="hero-text__row">
+    <div class="hero-text__container">
+        <div class="hero-text__title">
+            <h1 class="title">Services</h1>
+        </div>
+    </div>
+</div>
+
+<div class="padding-box">
+    <div class="teaser-container">
+        <p class="serviceText"> You searched for:</p>
+        <div class="teaser__type__round">
+            <span class="teaser__type__round--green">SG6 1DZ<span class="serviceText__icon">X</span></span>
+            <span class="teaser__type__round--grey">Family<span class="serviceText__icon">X</span></span>
+            <span class="teaser__type__round--orange">Parents/Carers<span class="serviceText__icon">X</span></span>     
+        </div>    
+    </div>
+
+
+    <div class="js-filters filter-form__container">
+        <summary class="filter-form__heading--red"><a href="/service-listing">Clear all filters</a></summary>                       
+    </div>
+
+    <div class="js-filters filter-form__container">
+        <summary class="filter-form__heading--green"><a href="/service-listing">Edit your search</a></summary> 
+    </div>
+</div>

@@ -324,8 +324,14 @@ p.serviceText img {
 </div>
 
 <script>
-  const summary = document.querySelector('summary');
-  summary.addEventListener('click', () => {
-    summary.textContent = summary.textContent !== 'Show advanced search options' ? 'Show advanced search options' : 'Hide advanced search options';
+  var details = document.querySelector('details.filter-form__filter-list');
+  details.addEventListener('toggle', function() {
+    var summary = document.querySelector('details.filter-form__filter-list > summary');
+
+    if (details.open) {
+      summary.innerHTML = 'Hide advanced search options';
+    } else {
+      summary.innerHTML = 'Show advanced search options';
+    }
   });
 </script>
